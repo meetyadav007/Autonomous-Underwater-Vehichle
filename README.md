@@ -24,11 +24,10 @@ The Autonomous Underwater Vehicle (AUV) is an underwater robotic system integrat
 | Arduino Mega 2560 | Sensor interfacing and actuator control |
 | Raspberry Pi Camera Module 3 | Underwater visual perception |
 | MPU6050 IMU | Orientation sensing |
-| MS5837-02BA | Pressure and depth measurement |
+| MS5837-02BA Pressure Sensor | Pressure and depth measurement |
 | Blue Robotics T200 Thrusters (6) | Underwater propulsion |
 | Electronic Speed Controllers | Thruster control |
 | Hydrophone and Preamplifier | Acoustic signal detection |
-| Underwater Ultrasonic Sensor | Obstacle detection |
 | Li-ion Battery | Power supply |
 | Buck Converter | Voltage regulation |
 
@@ -47,15 +46,11 @@ The Autonomous Underwater Vehicle (AUV) is an underwater robotic system integrat
 Autonomous-Underwater-Vehicle/
 │
 ├── README.md
-│
 ├── Hardware/
 │   ├── Mechanical/
 │   └── Electronics/
-│
 ├── Software/
-│
 ├── Documentation/
-│
 └── Media/
 ```
 
