@@ -118,8 +118,8 @@ int readTFLunaOnce() {
   for (int i = 0; i < 7; i++) buf[i] = tfl.read();
 
   uint8_t sum = b0 + b1;
-  for (int i = 0; i < 7; i++) sum += buf[i];
-  if (sum != buf[6]) return -1;
+  for (int i = 0; i < 6; i++) sum += buf[i];   // checksum = low byte of bytes 0..7
+  if (sum != buf[6]) return -1;                // buf[6] is the frame's checksum byte
 
   int dist = (int)buf[1] << 8 | buf[0];  // cm
   return dist;
@@ -348,3 +348,6 @@ void loop() {
       writeNeutralAll();
       Serial.println("Mission FAILED — Gate not found.");
       break;
+    }
+  }
+}
